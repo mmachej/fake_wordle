@@ -1,0 +1,95 @@
+body {
+    background-color: gray;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.line {
+    margin: auto;
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+}
+
+.line div {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    border: 2px solid;
+    background-color: lightgray;
+    font-size: 30px;
+    color: black;
+}
+
+.keyboard {
+    margin: auto;
+    display: inline-block;
+    width: 530px;
+    height: 200px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.keyboard div {
+    height: 50px;
+    width: 40px;
+    margin: 5px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    color: black;
+    background-color: darkgray;
+}
+
+#message-board {
+    height: 35px;
+    font-size: 18px;
+    color: red;
+    display: flex;
+}
+
+.misplaced {
+    background-color: orange !important;
+}
+
+.correct {
+    background-color: green !important;
+}
+
+.wrong {
+    background-color: gray !important;
+}
+
+#reset-button {
+    height: 40px;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: grey;
+    position: absolute;
+    left: calc(50% + 135px);
+}
+
+.message{
+
+    font-size: 40px;
+    height: 90px;
+    position: relative;
+    top: -470px;
+    display: flex;   
+}
