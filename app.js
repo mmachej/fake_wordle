@@ -19,7 +19,6 @@ let isGameWon = false;
 let message = document.createElement('div');
 let i = 0;
 
-
 function getWord() {
     let word = wordList[Math.floor(Math.random()*wordList.length)];
     answer = word.toUpperCase().split("");
@@ -98,6 +97,7 @@ function typeLetters(e) {
 }}
 
 function resetGame() {
+    document.activeElement?.blur();
     if (document.body.contains(message)) {
         document.body.removeChild(message);
     }
@@ -114,6 +114,7 @@ function resetGame() {
     })
     isGameWon = false;
     i = 0;
+    userWord = []
     playGame();
 }
 
